@@ -3,6 +3,8 @@ package com.example.hellospring.service;
 import com.example.hellospring.domain.Member;
 import com.example.hellospring.repository.MemberRepository;
 import com.example.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +13,7 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    public MemberService(MemberRepository memberRepository) {  // dependency Injection
+    public MemberService(MemberRepository memberRepository) {  // 생성자 주입 방식을 통한 DI
         this.memberRepository = memberRepository;
     }
 
