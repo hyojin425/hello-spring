@@ -1,5 +1,6 @@
 package com.example.hellospring;
 
+import com.example.hellospring.aop.TimeTraceAop;
 import com.example.hellospring.domain.Member;
 import com.example.hellospring.repository.*;
 import com.example.hellospring.service.MemberService;
@@ -41,6 +42,11 @@ public class SpringConfig {
 //    @Bean
 //    public MemberRepository memberRepository() {
 //       return new JpaMemberRepository(em);
+//    }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
 //    }
 
 }
